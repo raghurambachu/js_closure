@@ -18,9 +18,9 @@ var counter = (function() {
   };
 })();
 
-counter.value();
-counter.increment();
-counter.increment();
-counter.value();
-counter.decrement();
-counter.value();
+counter.value(); //0
+counter.increment(); //updates internally privatecounter to 1
+counter.increment(); //updates internally privatecounter to 2
+counter.value(); // 2
+counter.decrement(); // updates internally privatecounter to 2
+counter.value(); // 1
